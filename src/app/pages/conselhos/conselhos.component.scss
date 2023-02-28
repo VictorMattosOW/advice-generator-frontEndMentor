@@ -11,16 +11,55 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20rem;
+    justify-content: space-between;
+    width: 18rem;
     height: 12rem;
     border-radius: 15px;
     background-color: var(--dark-grayish-blue);
+    text-align: justify;
+}
+
+.card__btn {
+    position: absolute;
+    bottom: -35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neon-green);
+    border: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.card__btn:hover {
+    background-color: hsl(150, 100%, 100%);
+    -webkit-box-shadow: 0px 0px 20px 5px hsl(150, 100%, 50%);
+}
+
+.card__title-number {
+    margin: 2rem 0 0.5rem 0;
 }
 
 h1 {
     color: var(--light-cyan);
 }
 
-h2 {
+p {
     color: var(--neon-green);
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+}
+
+.divider {
+    margin-bottom: 2.5rem;
+}
+
+.card__msg-container {
+    width: 70%;
+    text-justify: distribute;
 }

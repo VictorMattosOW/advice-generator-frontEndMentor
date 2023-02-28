@@ -1,7 +1,13 @@
 <div class="container">
     <div class="card">
-        <h2 class="card__title-number">ADVICE #{{conselho.slip?.id}}</h2>
-        <h1>{{conselho.slip?.advice}}</h1>
-        <button (click)="getConselho()"><a >click ai</a></button>
+        <p class="card__title-number">ADVICE #{{conselho.slip?.id}}</p>
+        <div class="card__msg-container">
+            <h1>"{{conselho.slip?.advice}}"</h1>
+        </div>
+        <div class="divider">
+            <img src="../../../assets/pattern-divider-desktop.svg" alt="">
+        </div>
+        <a class="card__btn" (click)="getConselho()"><img src="././../../../assets/icon-dice.svg" alt=""></a>
+        <!-- <button class="card__btn" (click)="getConselho()"><a >click ai</a></button> -->
     </div>
 </div>
