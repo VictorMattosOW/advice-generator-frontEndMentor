@@ -11,11 +11,12 @@ import { Conselhos } from './model/conselhos.model';
 export class ConselhosComponent implements OnInit {
 
   conselho: Conselhos = {};
-
+  isDevice = false;
   constructor(private conselhoService: ConselhosService) {}
 
   ngOnInit(): void {
     this.getConselho();
+    this.isDevice = (window.screen.width < 600) ? true : false;
   }
 
   getConselho() {

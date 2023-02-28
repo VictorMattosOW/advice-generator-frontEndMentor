@@ -5,9 +5,9 @@
             <h1>"{{conselho.slip?.advice}}"</h1>
         </div>
         <div class="divider">
-            <img src="../../../assets/pattern-divider-desktop.svg" alt="">
+            <img *ngIf="!isDevice" src="../../../assets/pattern-divider-desktop.svg" alt="">
+            <img *ngIf="isDevice" src="../../../assets/pattern-divider-mobile.svg" alt="">
         </div>
         <a class="card__btn" (click)="getConselho()"><img src="././../../../assets/icon-dice.svg" alt=""></a>
-        <!-- <button class="card__btn" (click)="getConselho()"><a >click ai</a></button> -->
     </div>
 </div>
